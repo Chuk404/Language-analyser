@@ -76,7 +76,7 @@ async function translate() {
     outputBox.textContent = 'Translating...';
 
     try {
-        const response = await fetch('http://localhost:8080/translation', {
+        const response = await fetch('https://language-analyser-production.up.railway.app/translation', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
